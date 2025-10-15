@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data-Driven Bus Routing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>🚍 Data-Driven Bus Routing</h1>
+    <p>Optimizing Travel Time & Emission Reduction</p>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>Project Overview</h2>
+      <p>This demo visualizes bus stops and a simple route optimization.
+        Click anywhere on the map to add stops, then press <strong>Optimize Route</strong>
+        to simulate a route that reduces travel distance and emissions.</p>
+    </section>
+    <section id="map-container">
+      <h2>Interactive Map</h2>
+      <div id="map"></div>
+      <div class="controls">
+        <button id="optimize-btn">Optimize Route</button>
+        <button id="clear-btn" class="secondary">Clear</button>
+      </div>
+      <div id="info" class="info-box" hidden></div>
+    </section>
+  </main>
+  <footer>
+    <p>Made with ❤️ using Leaflet.js | Host easily on GitHub Pages</p>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

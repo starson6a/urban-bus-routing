@@ -1,0 +1,74 @@
+:root {
+  --blue: #2563eb;
+  --gray: #6b7280;
+  --bg: #f8fafc;
+}
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+}
+header {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+#map-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.controls {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+button {
+  padding: 10px 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background: var(--blue);
+  transition: 0.2s;
+}
+button.secondary {
+  background: var(--gray);
+}
+button:hover {
+  opacity: 0.9;
+}
+.info-box {
+  margin-top: 1rem;
+  background: #e0e7ff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1e3a8a;
+}
+footer {
+  text-align: center;
+  color: var(--gray);
+  padding: 1.2rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
